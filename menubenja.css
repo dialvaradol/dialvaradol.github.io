@@ -1,0 +1,527 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Lora', serif;
+
+    margin: 0;
+}
+
+h1{ font-size: 2.5em;}
+
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+button{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 0.25rem 0;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-image: linear-gradient(to top, #ebbba7 0%, #cfc7f8 100%);
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+}
+
+button:hover{
+    background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
+        <!-- cuando se pasa sobre el boton el color cambia -->
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+    
+    
+    
+}
+
+.color-acento{ color:rgb(152, 123, 19); }
+
+header{
+    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+   
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(13, 14, 13);
+    font-size: 1.6em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: rgb(100, 99, 97);
+  
+}
+
+#matrimonio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 80vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(238, 227, 227, 0.5),
+        rgba(145, 138, 138, 0.5)
+    )
+    ,url("../benja1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+#matrimonio h1{
+    color: rgb(59, 58, 58);
+    font-family: 'Marck Script', cursive;
+    font-family: 'Lobster', cursive;
+    font-size: 5.5em;
+    margin-bottom: 0;
+ 
+
+}
+#matrimonio h2{
+    color: rgb(59, 58, 58);
+    font-family: 'Marck Script', cursive;
+    font-family: 'Lobster', cursive;
+    font-size: 2.5em;
+    margin-top: 0;
+
+}
+
+#matrimonio button{
+    font-size: 5em;
+}
+
+#historia .container{
+    text-align: right;
+    padding: 100px 8px;
+    text-align: justify;
+}
+
+#registro{
+    background-color: rgb(234, 187, 187);
+    color: rgba(14, 13, 13, 0.761);
+    text-align: center;
+}
+
+#registro .container{
+    padding: 10px 10px auto;
+}
+
+#registro .h1{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#registro p{
+    display: none;
+}
+
+#registro .films{
+    background-position: center center;
+    background-size: cover;
+    padding: 5px 10px auto;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.films:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(208, 199, 199, 0.5),
+        rgba(212, 198, 198, 0.5)
+    )
+    ,<iframe width="460" height="215" src="https://www.youtube.com/embed/G9xO8wbLb6w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+}
+
+.films:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,<iframe width="460" height="215" src="https://www.youtube.com/embed/47r8FXYZWNU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+}
+
+.films:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,<iframe width="460" height="215" src="https://www.youtube.com/embed/Ebv9_rNb5Ig" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+}
+
+#Merkmale .container{
+    text-align: center;
+    padding: 250px 12px;
+}
+
+#Merkmale li{
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+
+
+#final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(212, 200, 200);
+    color: rgb(16, 15, 15);
+    height: 20vh;
+}
+
+#final h2{
+    font-size: 9vw;
+}
+
+#final button{
+    font-size: 5vw;
+}
+
+footer{
+    background-color: rgb(230,230,230);
+}
+
+footer p{
+    body {
+        font-family: 'Signika', sans-serif;
+     }
+     .bg-grey {
+        background: #292929;
+     }
+     .logo-footer {
+        margin-bottom: 40px;
+     }
+     footer {
+            color: grey;
+     }
+     footer p, a {
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+footer h6 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 40px;
+    position: relative;
+}
+footer h6:after {
+    position: absolute;
+    content: "";
+    background: grey;
+    width: 12%;
+    height: 1px;
+    left: 0;
+    bottom: -20px;
+}
+     .btn-footer {
+                 color: grey;
+              
+                text-decoration: none;
+                border: 1px solid;
+                border-radius: 43px;
+                font-size: 13px;
+                padding: 7px 30px;
+                line-height: 47px;
+     }
+     .btn-footer:hover {
+                
+                text-decoration: none;
+               
+     }
+    .form-footer input[type="text"] {
+        border: none;
+    border-radius: 16px 0 0 16px;
+    outline: none;
+    padding-left: 10px;
+    
+}
+::placeholder {
+    font-size: 10px;
+    padding-left: 10px;
+    font-style: italic;
+}
+ .form-footer input[type="button"] {
+    border: none;
+    background:#232323;
+        margin-left: -5px;
+    color: #fff;
+    outline: none;
+    border-radius: 0 16px 16px 0;
+    padding: 2px 12px;
+}
+     .social .fa {
+    color: grey;
+    font-size: 22px;
+    padding: 10px 15px;
+    background: #3c3c3c;
+}
+     footer ul li {
+    list-style: none;
+    display: block;
+}
+  footer ul  {
+   padding-left: 0;
+}
+footer ul  li a{
+  text-decoration: none;
+  color: grey;
+  text-decoration:none;
+}
+a:hover {
+    text-decoration: none;
+    color: #f5f5f5 !important;
+    
+}
+.logo-part {
+    border-right: 1px solid grey;
+    height: 100%;
+    }
+    
+}
+
+
+
+
+@media (min-width: 850px){
+    header{
+      
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+         
+    }
+
+    #matrimonio h1{
+        color: rgb(59, 58, 58);
+        font-family: 'Lobster', cursive;
+        font-family: 'Marck Script', cursive;
+        font-size: 6.5em;
+        padding-bottom: 2px;
+        text-align: center;
+     
+    
+    }
+    #matrimonio h2{
+        color: rgb(59, 58, 58);
+        font-family: 'Lobster', cursive;
+        font-family: 'Marck Script', cursive;
+        font-size: 2.5em;
+        padding-top: px;
+    
+    }
+    #hero h1{
+        font-size: 5em;
+    }
+
+    #historia .container{
+        display: flex;
+        justify-content: center;
+    }
+
+    #historia .text{
+        width: 80%;
+        max-width: 600px;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: justify;
+    }
+
+    #historia h2{
+        margin-top: 0px;
+        text-align: center;
+        justify-content: center;
+        
+    }
+
+    #historia .img-container{
+        background-image: url("../benja2.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 650px;
+        width: 600px; 
+      
+    }
+
+    #registro .programs{
+        display: flex;
+        justify-content: center;
+    }
+
+    #registro p{
+        display: block;
+        margin-bottom: 10px;
+        text-align: justify;
+        
+    }
+
+    #registro h2{
+        font-size: 4em;
+     
+    }
+
+    #registro h3{
+        margin-top: 0;
+    }
+
+    #registro .films{
+        padding: 0.25rem 0;
+        background-size: 50% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgb(181, 132, 125);
+        box-shadow: 2px 2px 10px rgba(8, 8, 8, 0.5);
+    
+        
+    }
+
+    .films:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+       
+        color:rgb(236, 245, 245)
+        
+    }
+
+    .films:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        
+        color:white;
+    }
+
+    .films:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        
+color:white;
+    }
+
+    #Merkmale{
+        background-image: url("../benja1.jpg");
+        background-repeat: no-repeat;
+        background-size: 500px 400px;
+        background-position: calc(100vw - 500px) 120px;
+        color:rgb(9, 9, 9)
+    }
+
+    #Merkmale .container{
+        text-align: initial;
+    }
+
+    #Merkmale ul{
+        margin-left: 100px;
+    }
+
+    #final h2{
+        font-size: 2em;
+    }
+
+    #final button{
+        font-size: 2em;
+    }
+
+    footer .container{
+        justify-content: flex-end;
+    }
+}
+#map {
+	height: 200px;
+	width: 200px;
+    margin: 2em 30em auto;
+    
+ 
+    
+}
+#map {
+	margin: 2em 30em auto;
+    padding: 10, 20, 80, 0;
+    
+ 
+    
+}
+header .map{
+text-align: center;
+background-color: #cb8b8b;
+
+}
+#final .mapa {
+    background-image: url("../benja1.jpg");
+    background-repeat: no-repeat;
+    background-size: 500px 400px;
+    background-position: calc(100vw - 500px) 120px;
+    color:white
+    
+ 
+    
+}
+@media (min-width: 1200px) {
+    #Merkmale{
+        background-position-x: calc(100vw - 800px);
+    }
+}
